@@ -1,0 +1,26 @@
+*.iml
+.gradle/
+build/
+dist/
+local.properties
+.idea/
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+
+# Chave de assinatura e senhas: ficam só na máquina de quem publica, nunca no git.
+aura-release.jks
+keystore.properties
+*.jks
+*.keystore
+
+# Outros segredos que alguém possa largar aqui.
+*.pem
+*.p12
+*.pfx
+*.env
+.env.*
+key.properties
+service-account*.json

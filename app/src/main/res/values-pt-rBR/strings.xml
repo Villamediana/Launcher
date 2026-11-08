@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="accessibility_label">Launcher — gestos</string>
+    <string name="accessibility_summary">Desenhe gestos por cima de qualquer tela</string>
+    <string name="accessibility_description">Permite que o Launcher desenhe seus gestos por cima da tela de bloqueio e de outros apps, e use voltar, recentes, a cortina de notificações ou bloqueie a tela quando um gesto pedir. Ele não lê o que está na tela. Desligue a qualquer momento para revogar.</string>
+
+    <string name="screen_control_paused_channel">Controle de tela pausado</string>
+    <string name="screen_control_paused_channel_desc">Aparece quando o serviço de gestos sai da frente de um app de banco</string>
+    <string name="screen_control_paused_title">O controle de tela está desligado</string>
+    <string name="screen_control_paused_text">Os gestos saíram da frente do %1$s · toque pra religar</string>
+    <string name="screen_control_paused_body">O Launcher desligou o serviço de gestos pro %1$s poder abrir. O Android só deixa religar na mão — toque aqui pra ir direto pro interruptor.</string>
+
+    <!-- ==================== Common reusable ==================== -->
+    <string name="common_save">Salvar</string>
+    <string name="common_cancel">Cancelar</string>
+    <string name="common_close">Fechar</string>
+    <string name="common_clear">Limpar</string>
+    <string name="common_try_again">Tentar de novo</string>
+
+    <!-- ==================== Day sheet ==================== -->
+    <string name="day_sheet_title">Seu dia</string>
+    <string name="day_sheet_now">agora</string>
+    <string name="day_sheet_today">hoje</string>
+    <string name="day_sheet_tomorrow">amanhã</string>
+    <string name="day_sheet_in_days">em %1$dd</string>
+    <string name="day_sheet_new_event">Novo evento</string>
+    <string name="day_sheet_no_events">Nada na agenda para os próximos dias.</string>
+    <string name="day_sheet_no_weather">O clima precisa da permissão de localização, concedida em Configurações.</string>
+    <string name="day_sheet_weather_loading">Atualizando o clima…</string>
+    <string name="day_sheet_weather_unavailable">O clima está indisponível. Verifique a localização e a conexão.</string>
+    <string name="day_sheet_weather_retry">Tentar atualizar o clima</string>
+
+    <!-- ==================== Onboarding ==================== -->
+    <string name="ob_language_title">Idioma</string>
+    <string name="ob_language_subtitle">Você pode mudar isso depois em Configurações.</string>
+    <string name="ob_welcome_body">Uma tela inicial calma: seu relógio, seu dia e seus apps, nada no caminho.</string>
+    <string name="ob_welcome_bullet_1">Sem conta, sem login, sem telemetria</string>
+    <string name="ob_welcome_bullet_2">Desenhe uma forma pra abrir qualquer coisa</string>
+    <string name="ob_welcome_bullet_3">Widgets que você organiza com um dedo</string>
+    <string name="ob_home_title">Deixe como sua tela inicial</string>
+    <string name="ob_home_subtitle">O Android pede sua confirmação sozinho.</string>
+    <string name="ob_home_hint">Se nada abrir, seu celular pode não oferecer o atalho — vá em Configurações › Apps › Apps padrão › Tela inicial.</string>
+    <string name="ob_home_done">O Launcher é a sua tela inicial.</string>
+    <string name="ob_home_set_default">Definir como launcher padrão</string>
+    <string name="ob_start">Começar</string>
+    <string name="ob_continue">Continuar</string>
+    <string name="ob_back">Voltar</string>
+    <string name="ob_step_count">Alguns passos curtos</string>
+
+    <string name="ob_perms_title">O que o Launcher pode ver</string>
+    <string name="ob_perms_subtitle">O clima, a agenda e os lembretes precisam disso. Nada é enviado pra lugar nenhum.</string>
+    <string name="ob_perms_allow_all">Permitir tudo</string>
+    <string name="ob_perms_all_granted">Tudo que o Android pergunta por diálogo já está permitido.</string>
+
+    <!-- ==================== Settings — general ==================== -->
+    <string name="settings_title">Configurações</string>
+    <string name="settings_count_one">um</string>
+    <string name="settings_count_many">%1$d</string>
+    <string name="settings_language_title">Idioma</string>
+
+    <string name="settings_category_update_title">Atualização</string>
+
+    <string name="settings_back_cd">Voltar</string>
+    <string name="drawer_system_settings_cd">Configurações do Android</string>
+
+    <string name="settings_theme_title">Tema</string>
+    <string name="settings_theme_subtitle">Claro, escuro, ou o que o celular estiver usando.</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="settings_theme_dark">Escuro</string>
+    <string name="settings_theme_system">Sistema</string>
+
+    <string name="settings_launcher_header_title">Tela inicial</string>
+    <string name="settings_launcher_header_subtitle">O Launcher ainda não é sua tela inicial</string>
+    <string name="settings_launcher_title">Definir como launcher padrão</string>
+    <string name="settings_launcher_subtitle">O Android pede sua confirmação sozinho.</string>
+    <string name="settings_launcher_button">Definir</string>
+
+    <string name="settings_hidden_apps_title">Apps ocultos</string>
+    <string name="settings_hidden_apps_one">1 app fora do drawer</string>
+    <string name="settings_hidden_apps_many">%1$d apps fora do drawer</string>
+    <string name="settings_hidden_show">Mostrar</string>
+    <string name="settings_hidden_show_reveal">Mostrar no drawer</string>
+
+    <string name="settings_secret_hide">Ocultar</string>
+    <string name="settings_secret_show">Mostrar</string>
+
+    <!-- ==================== Updater ==================== -->
+    <string name="updater_checking">Verificando atualizações…</string>
+    <string name="updater_up_to_date">Você está na versão mais nova.</string>
+    <string name="updater_check">Verificar atualizações</string>
+    <string name="updater_check_with_version">Buscar nova versão · %1$s</string>
+    <string name="updater_check_again">Verificar de novo</string>
+    <string name="updater_verifying">Verificando %1$s…</string>
+    <string name="updater_available_title">Atualizar para %1$s</string>
+    <string name="updater_not_now">Agora não</string>
+    <string name="updater_download">Baixar</string>
+    <string name="updater_saved">Baixada e conferida. Toque em Instalar — o Android pergunta uma vez, e as próximas entram direto.</string>
+    <string name="updater_open">Instalar</string>
+    <string name="updater_downloading">Baixando %1$s</string>
+    <string name="updater_progress_kb">%1$d de %2$d KB</string>
+
+    <!-- ==================== Usage ==================== -->
+
+    <string name="settings_category_gestures_title">Gestos</string>
+    <string name="settings_gestures_empty">Nenhum gesto ainda. Ensine uma forma abaixo e depois desenhe ela na tela inicial com dois dedos.</string>
+    <string name="settings_gestures_teach">Ensinar um gesto</string>
+    <string name="gesture_builder_new">Novo gesto</string>
+    <string name="gesture_builder_draw_times">Desenhe %1$d de %2$d vezes</string>
+    <string name="gesture_builder_what_it_does">O que ele faz</string>
+    <string name="gesture_builder_redraw">Desenhar de novo</string>
+    <string name="gesture_builder_name">Nome</string>
+    <string name="gesture_builder_actions">Ele faz isto</string>
+    <string name="gesture_builder_remove">Remover</string>
+    <string name="gesture_builder_save">Salvar</string>
+    <string name="gesture_builder_cancel">Cancelar</string>
+    <string name="gesture_builder_delete">Excluir</string>
+    <string name="gesture_builder_disagree">Essa forma é diferente da anterior. Desenhe a mesma de novo.</string>
+    <string name="gesture_builder_collides">Parecido demais com “%1$s”. Tente outra forma.</string>
+    <string name="gesture_builder_too_short">Curto demais pra distinguir de um toque. Desenhe maior.</string>
+    <string name="step_picker_title">Adicionar um passo</string>
+    <string name="step_uses_carried">usa o que veio antes</string>
+    <string name="step_produces_carried">entrega o resultado adiante</string>
+    <string name="step_add">Adicionar um passo</string>
+    <string name="step_open_named">Abrir %1$s</string>
+    <string name="step_open_app">Abrir o app</string>
+    <string name="step_shortcuts_loading">Lendo as ações dele…</string>
+    <string name="step_group_aura">Launcher</string>
+    <string name="step_group_phone">Telefone</string>
+    <string name="gesture_show_gestures">Mostrar meus gestos</string>
+    <string name="palette_empty">Nenhum gesto ensinado ainda.</string>
+    <string name="gesture_torch_on">Acender a lanterna</string>
+    <string name="gesture_torch_off">Apagar a lanterna</string>
+    <string name="gesture_system_back">Voltar</string>
+    <string name="gesture_system_home">Ir pra tela inicial</string>
+    <string name="gesture_system_recents">Apps recentes</string>
+    <string name="gesture_system_notifications">Notificações</string>
+    <string name="gesture_system_quick_settings">Ajustes rápidos</string>
+    <string name="gesture_system_lock">Bloquear a tela</string>
+
+    <!-- ==================== Conversa ao vivo ==================== -->
+
+    <!-- ==================== App actions ==================== -->
+    <string name="app_action_unpin">Tirar da tela inicial</string>
+    <string name="app_action_pin">Fixar na tela inicial</string>
+    <string name="app_action_move_up">Mover para cima</string>
+    <string name="app_action_move_down">Mover para baixo</string>
+    <string name="app_action_rename">Renomear</string>
+    <string name="app_action_rename_current">Renomear (atualmente \"%1$s\")</string>
+    <string name="app_action_show">Mostrar no drawer</string>
+    <string name="app_action_hide">Ocultar do drawer</string>
+    <string name="app_action_info">Informações do app</string>
+    <string name="app_action_uninstall">Desinstalar</string>
+    <string name="app_rename_dialog_title">Renomear %1$s</string>
+    <string name="app_rename_hint">Só aparece no launcher. O nome real do app fica como está no sistema.</string>
+
+    <!-- ==================== Drawer ==================== -->
+    <string name="drawer_search_placeholder">Pesquisar…</string>
+    <string name="drawer_clear_cd">Limpar</string>
+    <string name="drawer_no_apps">Nenhum app encontrado</string>
+    <string name="drawer_no_matches">Nada bate com \"%1$s\"</string>
+
+    <!-- ==================== Home / Notifications ==================== -->
+    <string name="home_paused_fallback">um app de banco</string>
+    <string name="home_open_drawer_cd">Abrir drawer de apps</string>
+    <string name="notif_count_one">1 notificação</string>
+    <string name="notif_count_many">%1$d notificações</string>
+    <string name="notif_clear_all_cd">Limpar todas as notificações</string>
+
+    <!-- ==================== Permissions ==================== -->
+    <string name="settings_category_permissions_title">Permissões</string>
+    <string name="perm_status_on">Concedida</string>
+    <string name="perm_allow">Permitir</string>
+    <string name="perm_notifications_title">Notificações</string>
+    <string name="perm_location_title">Localização</string>
+    <string name="perm_calendar_title">Calendário</string>
+    <string name="perm_notif_access_title">Acesso a notificações</string>
+    <string name="perm_accessibility_title">Gestos por cima de outros apps</string>
+    <string name="perm_accessibility_paused">Desligado automaticamente por causa do %1$s — toque para conceder de novo</string>
+    <string name="perm_exact_alarm_title">Alarmes exatos</string>
+    <string name="perm_install_title">Instalar apps desconhecidos</string>
+
+    <!-- ==================== Clock menu ==================== -->
+
+    <!-- ==================== Clock styles ==================== -->
+    <string name="clock_sheet_title">Escolha um relógio</string>
+    <string name="clock_sheet_subtitle">Segure no relógio a qualquer hora para trocar.</string>
+    <string name="clock_style_paper_name">Papel</string>
+    <string name="clock_style_paper_sub">O original — números grandes e leves.</string>
+    <string name="clock_style_bold_name">Pôster</string>
+    <string name="clock_style_bold_sub">Hora sobre o minuto, pesado, com um traço ao lado.</string>
+    <string name="clock_style_ring_name">Anel</string>
+    <string name="clock_style_ring_sub">Dois arcos preenchendo a hora e o minuto.</string>
+    <string name="clock_style_matrix_name">Matriz</string>
+    <string name="clock_style_matrix_sub">Escrito numa grade de pontos.</string>
+    <string name="clock_style_type_name">Máquina de escrever</string>
+    <string name="clock_style_type_sub">Monoespaçado, bem espaçado, com traços em cima e embaixo.</string>
+    <string name="clock_style_analog_name">Analógico</string>
+    <string name="clock_style_analog_sub">Um mostrador desenhado, sem números.</string>
+    <string name="clock_style_minimal_name">Mínimo</string>
+    <string name="clock_style_minimal_sub">Pequeno e discreto — feito para um wallpaper atrás.</string>
+    <string name="clock_style_editorial_name">Editorial</string>
+    <string name="clock_style_editorial_sub">Serifa de página de livro, com os dois-pontos na cor de destaque.</string>
+
+    <!-- ==================== Wallpaper ==================== -->
+    <string name="settings_wallpaper_title">Wallpaper</string>
+    <string name="settings_wallpaper_subtitle">Papel, uma cena desenhada, ou uma foto sua.</string>
+    <string name="settings_wallpaper_gallery">Galeria</string>
+    <string name="settings_wallpaper_overlay_title">Overlay</string>
+    <string name="settings_wallpaper_overlay_subtitle">Preto por cima da foto, pra o relógio e os nomes aparecerem numa imagem clara.</string>
+    <string name="settings_wallpaper_ink_title">Cor da fonte sobre o wallpaper</string>
+    <string name="settings_wallpaper_ink_subtitle">Qual cor o relógio, a data e os rótulos usam por cima da imagem.</string>
+    <string name="settings_wallpaper_ink_follow">Seguir o tema</string>
+    <string name="settings_wallpaper_ink_light">Clara</string>
+    <string name="settings_wallpaper_ink_dark">Escura</string>
+    <string name="settings_live_wallpaper_none">Papel</string>
+    <string name="settings_live_wallpaper_night">Céu noturno</string>
+    <string name="settings_live_wallpaper_constellation">Constelação</string>
+    <string name="wallpaper_editor_title">Ajuste a imagem</string>
+    <string name="wallpaper_editor_hint">Pinça para dar zoom, arraste para mover, toque na seta para girar.</string>
+    <string name="wallpaper_editor_rotate">Girar</string>
+    <string name="wallpaper_editor_reset">Resetar</string>
+    <string name="wallpaper_editor_apply">Aplicar</string>
+
+    <string name="notification_reply">Responder</string>
+    <string name="notification_reply_send">Enviar</string>
+    <string name="notification_reply_hint">Escreva uma resposta</string>
+    <string name="notification_reply_failed">Não deu para enviar — a conversa pode já ter sido respondida em outro lugar. Abra o app para responder por lá.</string>
+
+    <string name="notification_folded">%1$d mensagens</string>
+
+    <string name="settings_widgets_header_subtitle">Tudo o que a tela inicial pode mostrar. Desligar só esconde — nada do que foi registrado se perde.</string>
+    <string name="widget_clock_title">Relógio</string>
+    <string name="widget_clock_subtitle">A hora grande no topo</string>
+    <string name="widget_date_title">Data</string>
+    <string name="widget_date_subtitle">Hoje, na faixa embaixo do relógio</string>
+    <string name="widget_battery_title">Bateria</string>
+    <string name="widget_battery_subtitle">Nível de carga, ao lado da data</string>
+    <string name="widget_weather_title">Clima</string>
+    <string name="widget_weather_subtitle">Temperatura e condições</string>
+    <string name="widget_now_playing_title">Tocando agora</string>
+    <string name="widget_now_playing_subtitle">A música ou o vídeo que está rolando</string>
+    <string name="widget_calendar_title">Agenda</string>
+    <string name="widget_calendar_subtitle">Seus próximos compromissos</string>
+    <string name="widget_notifications_title">Notificações</string>
+    <string name="widget_notifications_subtitle">A lista na tela inicial</string>
+    <string name="widget_configure">Configurar</string>
+
+    <string name="lock_gestures_title">Gestos na tela de bloqueio</string>
+    <string name="lock_gestures_subtitle">Uma faixa na borda esquerda da tela bloqueada. Puxe o traço dali e o gesto roda — depois da sua digital.</string>
+    <string name="lock_gestures_needs_accessibility">Precisa do controle de tela, concedido acima</string>
+    <string name="perm_overlay_title">Sobrepor a outros apps</string>
+
+    <!-- Cronômetro -->
+    <string name="widget_timer_title">Cronômetro</string>
+    <string name="widget_timer_subtitle">Cronômetro e temporizador na tela inicial</string>
+    <string name="timer_mode_stopwatch">Cronômetro</string>
+    <string name="timer_mode_countdown">Temporizador</string>
+    <string name="timer_reset">Zerar</string>
+    <string name="timer_minutes">%1$d min</string>
+    <string name="timer_done_title">Deu o tempo</string>
+    <string name="timer_done_body">O temporizador que você marcou chegou ao fim.</string>
+    <string name="timer_channel_name">Temporizador</string>
+    <string name="timer_channel_desc">Toca quando um temporizador que você marcou chega a zero</string>
+    <string name="widget_map_title">Mapa</string>
+    <string name="widget_map_subtitle">Onde você está, em 3D, e a que distância está o próximo compromisso</string>
+    <string name="map_widget_ask">Mostrar onde estou — toque para permitir a localização exata</string>
+    <string name="widget_now_title">Agora</string>
+    <string name="widget_now_subtitle">As duas ou três coisas que importam neste minuto</string>
+    <string name="widget_sky_title">Céu do dia</string>
+    <string name="widget_sky_subtitle">O caminho do sol hoje, e a lua à noite</string>
+    <string name="now_widget_label">Agora</string>
+    <string name="now_late_dose">%1$s · atrasado %2$d min</string>
+    <string name="now_leave_now">Saia agora pra %1$s · %2$d min de carro</string>
+    <string name="now_leave_at">Sair às %1$s pra %2$s · %3$d min de carro</string>
+    <string name="now_event_in">%1$s em %2$d min</string>
+    <string name="now_event_at">%1$s às %2$s</string>
+    <string name="now_dose">%1$s às %2$s</string>
+    <string name="now_rain">Chuva por volta das %1$s</string>
+    <string name="sky_sunset_in">Pôr do sol em %1$s</string>
+    <string name="sky_sunrise_at">Nascer do sol às %1$s</string>
+    <string name="moon_new">Lua nova</string>
+    <string name="moon_waxing_crescent">Lua crescente</string>
+    <string name="moon_first_quarter">Quarto crescente</string>
+    <string name="moon_waxing_gibbous">Crescente gibosa</string>
+    <string name="moon_full">Lua cheia</string>
+    <string name="moon_waning_gibbous">Minguante gibosa</string>
+    <string name="moon_last_quarter">Quarto minguante</string>
+    <string name="moon_waning_crescent">Lua minguante</string>
+    <string name="now_ongoing">%1$s · até %2$s</string>
+    <string name="now_alarm">Alarme às %1$s</string>
+    <string name="now_timer_left">Temporizador · faltam %1$s</string>
+    <string name="now_stopwatch">Cronômetro · %1$s</string>
+    <string name="map_where_to">Para onde?</string>
+    <string name="map_mode_car">Carro</string>
+    <string name="map_mode_transit">Transporte</string>
+    <string name="map_mode_walk">A pé</string>
+    <string name="map_mode_bike">Bike</string>
+    <string name="map_finding_route">Procurando o caminho…</string>
+    <string name="map_no_route">Não achei rota pra esse</string>
+    <string name="map_open_maps">Abrir no Maps</string>
+    <string name="map_open_uber">Uber</string>
+
+    <string name="widget_todo_title">Coisas a fazer</string>
+    <string name="widget_todo_subtitle">O que vence hoje, um toque pra marcar. Com repetição e lembrete.</string>
+    <string name="todo_notif_done">Feito</string>
+    <string name="todo_channel_name">Lembretes de coisas a fazer</string>
+    <string name="todo_channel_description">Uma coisa a fazer que chegou na hora.</string>
+    <string name="todo_tomorrow">amanhã</string>
+    <string name="todo_yesterday">ontem</string>
+    <string name="todo_today">Hoje</string>
+    <string name="todo_title">Coisas a fazer</string>
+    <string name="todo_new">Nova</string>
+    <string name="todo_edit">Editar</string>
+    <string name="todo_none">Nada ainda. Crie aqui.</string>
+    <string name="todo_paused">Pausada</string>
+    <string name="todo_all_done">Concluída</string>
+    <string name="todo_every_hours">A cada %d h</string>
+    <string name="todo_daily">Todo dia</string>
+    <string name="todo_every_days">A cada %d dias</string>
+    <string name="todo_weekly">Semanal</string>
+    <string name="todo_every_weeks">A cada %d semanas</string>
+    <string name="todo_monthly">Mensal</string>
+    <string name="todo_every_months">A cada %d meses</string>
+    <string name="todo_field_title">O que fazer</string>
+    <string name="todo_field_note">Detalhe (opcional)</string>
+    <string name="todo_field_when">Quando</string>
+    <string name="todo_pick_date">Outro dia</string>
+    <string name="todo_no_time">Sem hora</string>
+    <string name="todo_pick_time">Com hora</string>
+    <string name="todo_field_repeat">Repetir</string>
+    <string name="todo_repeat_none">Não repete</string>
+    <string name="todo_repeat_hours">De horas em horas</string>
+    <string name="todo_every">A cada</string>
+    <string name="todo_unit_hours">horas</string>
+    <string name="todo_unit_days">dias</string>
+    <string name="todo_unit_weeks">semanas</string>
+    <string name="todo_unit_months">meses</string>
+    <string name="todo_forever">Sem fim</string>
+    <string name="todo_until">Até %s</string>
+    <string name="todo_pick_end">Até…</string>
+    <string name="todo_remind">Me avisar na hora</string>
+    <string name="todo_pause">Pausada</string>
+    <string name="todo_save">Salvar</string>
+    <string name="todo_delete">Excluir</string>
+    <string name="ob_perms_notif_access">Ler notificações (opcional)</string>
+    <string name="ob_perms_updates">Instalar as atualizações do Launcher</string>
+    <string name="ob_perms_allow">Permitir</string>
+    <string name="ob_perms_note">Cada um abre a página do Android já na chave do Launcher: ligue e volte.</string>
+    <string name="perm_self_enable_title">Voltar sozinho depois do banco</string>
+    <string name="perm_self_enable_note">Opcional, pelo computador, uma vez só. Toque pra copiar o comando e rode com o celular conectado (depuração USB ligada).</string>
+    <string name="perm_self_enable_copied">Comando copiado. Rode no computador com o celular conectado.</string>
+    <string name="updater_installing">Instalando… o Launcher reinicia sozinho.</string>
+    <string name="updater_install_failed">Não deu pra instalar: %1$s</string>
+    <string name="updater_channel_name">Atualizações</string>
+    <string name="updater_ready_title">Launcher %1$s pronto</string>
+    <string name="updater_ready_text">Baixada e conferida. Toque pra instalar.</string>
+    <string name="updater_install_now">Instalar</string>
+    <string name="world_tela">Sua tela</string>
+    <string name="world_tela_hint">Tema, relógio, home e widgets</string>
+    <string name="world_acoes">Gestos</string>
+    <string name="world_acoes_hint">Formas que você desenha para abrir coisas</string>
+    <string name="world_dados">Sistema</string>
+    <string name="world_dados_hint">Permissões, idioma, apps ocultos, versão</string>
+    <string name="suggest_header">Ainda falta</string>
+    <string name="suggest_none">Tudo certo por aqui.</string>
+    <string name="suggest_allow">Permitir</string>
+    <string name="suggest_alarm_title">Lembretes na hora certa</string>
+    <string name="suggest_alarm_why">Sem isso eles podem chegar atrasados.</string>
+    <string name="suggest_turn_on">Ativar</string>
+    <string name="suggest_notif_title">Avisos</string>
+    <string name="suggest_notif_why">Pros timers e lembretes das tarefas.</string>
+    <string name="day_now">Agora</string>
+    <string name="day_tomorrow">Amanhã</string>
+    <string name="day_reminder">Lembrete</string>
+    <string name="day_late">Atrasado</string>
+    <string name="day_rain_at">Chuva por volta das %1$s.</string>
+    <string name="day_in_minutes">em %1$d min</string>
+    <string name="sky_clear">céu limpo</string>
+    <string name="sky_partly">algumas nuvens</string>
+    <string name="sky_cloudy">nublado</string>
+    <string name="sky_fog">neblina</string>
+    <string name="sky_rain">chuva</string>
+    <string name="sky_snow">neve</string>
+    <string name="sky_storm">tempestade</string>
+    <string name="tela_home_style">Home</string>
+    <string name="tela_home_day">Dia em linha</string>
+    <string name="tela_home_day_hint">Relógio pequeno e o seu dia numa linha.</string>
+    <string name="tela_home_classic">Clássica</string>
+    <string name="tela_home_classic_hint">O relógio grande e os favoritos.</string>
+    <string name="tela_day_favorites">Favoritos abaixo do dia</string>
+    <string name="tela_day_favorites_hint">Os apps que você fixou, embaixo da linha do dia.</string>
+
+    <string name="tela_live_weather">Clima ao vivo</string>
+    <string name="tela_live_weather_hint">O céu da Home segue o tempo lá fora: chuva, tempestade, neve, neblina, sol, noite. Fica parado na economia de bateria.</string>
+
+    <string name="settings_category_drawings_title">Desenhos</string>
+    <string name="settings_drawings_new">Novo desenho</string>
+    <string name="settings_drawings_empty">Onde você desenha gestos, segure o dedo parado e abre uma lousa: uma página sem fim pra desenhar à mão. Circule algo e a IA faz a mágica nele. Seus desenhos ficam aqui.</string>
+    <string name="settings_drawings_model">Modelo que ajuda</string>
+    <string name="settings_drawings_provider">Provedor</string>
+    <string name="settings_drawings_key">Chave da API</string>
+    <string name="settings_drawings_model_name">Modelo</string>
+    <string name="settings_drawings_base_url">Endereço</string>
+    <string name="settings_drawings_model_hint">Precisa ser um modelo que enxerga imagens. A chave fica só neste celular.</string>
+    <string name="settings_drawings_delete">Apagar este desenho?</string>
+    <string name="settings_drawings_delete_confirm">Apagar</string>
+    <string name="sketch_no_model">Desenho livre — escolha um modelo em Configurações › Desenhos para a IA ajudar</string>
+    <string name="sketch_model_failed">O modelo não respondeu: %1$s</string>
+    <string name="sketch_no_picture">Não achei imagem de “%1$s”</string>
+    <string name="settings_drawings_load_models">Carregar modelos</string>
+    <string name="settings_drawings_loading">Carregando…</string>
+    <string name="settings_drawings_test">Testar</string>
+    <string name="settings_drawings_testing">Testando…</string>
+    <string name="settings_drawings_test_ok">Respondeu em %1$s s e viu: %2$s</string>
+    <string name="settings_drawings_no_models">Esse endereço não listou modelos</string>
+    <string name="settings_drawings_pick_model">Modelo</string>
+    <string name="settings_drawings_filter">Filtrar</string>
+</resources>

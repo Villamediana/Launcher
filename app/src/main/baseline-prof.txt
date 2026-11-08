@@ -1,0 +1,6 @@
+# Aura's own code, compiled ahead of time on install (see profileinstaller in
+# app/build.gradle.kts). The libraries ship their own profiles; this covers
+# what runs on every frame of the home screen, the drawer, the dock and the
+# orb — and, simply, the rest of the app.
+HSPLcom/aura/launcher/**->**(**)**
+Lcom/aura/launcher/**;

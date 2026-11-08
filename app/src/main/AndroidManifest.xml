@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        The one permission that lets an accessibility service open a screen.
+
+        Android 10 stopped apps launching activities from the background, and a
+        service is background however visible its overlay is — so a gesture
+        drawn on the lock screen was recognised and then quietly went nowhere.
+        This is the documented exception, and it is only ever used for one
+        thing here: putting up the unlock prompt after a shape is matched.
+    -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- The picture chosen for the home screen also becomes the lock screen's. -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+        Uninstalling from the long-press menu. Without this the system silently
+        refuses the intent on Android 10 and up. It grants nothing on its own:
+        the system still shows its own confirmation dialog.
+    -->
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <!--
+        Self-update. Kicks off the system installer with the downloaded APK; the
+        system still shows its own confirm-and-install screen.
+    -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!--
+        Normal-level, granted at install. Lets the update session claim update
+        ownership (Android 14+), so later updates can go in without a prompt.
+    -->
+    <uses-permission android:name="android.permission.ENFORCE_UPDATE_OWNERSHIP" />
+
+    <!-- Timers and to-do reminders are alarms, and alarms are dropped on reboot. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!--
+        Requested, not required. Every path falls back to a windowed alarm that
+        needs no permission at all.
+    -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <!--
+        Granted without asking on Android 13+ to apps whose job includes
+        reminders, which the to-do card's are.
+    -->
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <!--
+        Never asked for — no app can. Given once from a computer
+        (adb shell pm grant com.villamediana.launcher android.permission.WRITE_SECURE_SETTINGS),
+        it lets the launcher switch its accessibility service back on by itself
+        after a banking app made it step aside. Without it nothing changes.
+    -->
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Optional: asked for by the home screen card that needs them. -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- The map widget: coarse puts you somewhere in a 2 km square, which on a
+         street-level map is the wrong street. Asked for only from the widget. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="smsto" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".AuraApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/Theme.Aura">
+
+        <!--
+            Reading the shade needs a grant of its own, given in Settings and
+            nowhere else. Until the user gives it the system never binds this,
+            and the home screen simply has no notification section.
+        -->
+        <service
+            android:name=".notifications.AuraNotificationListener"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="false"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|screenLayout|smallestScreenSize|uiMode|density"
+            android:theme="@style/Theme.Aura">
+
+            <!-- Regular launch -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Home screen replacement -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            Hands the freshly downloaded APK to the system installer.
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.updates"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/update_paths" />
+        </provider>
+
+        <!--
+            The end of a countdown. Exact where the system allows it: an egg
+            timer that goes off at eleven past is simply wrong.
+        -->
+        <receiver
+            android:name=".timer.TimerAlarm$TimerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.aura.launcher.TIMER_DONE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+            Opens for as long as an unlock takes, and closes. No interface: the
+            face and fingerprint screens are the system's, and this only learns
+            whether they were satisfied.
+        -->
+        <activity
+            android:name=".lock.UnlockAndRunActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:stateNotNeeded="true"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:theme="@style/Theme.Aura.Invisible" />
+
+        <!-- To-do reminders: the alarm carries nothing but its own name. -->
+        <receiver
+            android:name=".todo.TodoReminderReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.aura.launcher.TODO_REMIND" />
+                <action android:name="com.aura.launcher.TODO_DONE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Answers from the update's install session, and the "ready" notification's button. -->
+        <receiver
+            android:name=".updater.UpdateInstallReceiver"
+            android:exported="false" />
+
+        <!-- Deletes the downloaded APK once the launcher has been replaced by it. -->
+        <receiver
+            android:name=".updater.UpdateCleanupReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+          Gestures over the lock screen and other apps, and the system actions
+          a gesture may end in. Inert until the user turns it on in system
+          settings.
+        -->
+        <service
+            android:name=".control.AuraAccessibilityService"
+            android:exported="true"
+            android:label="@string/accessibility_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+    </application>
+</manifest>

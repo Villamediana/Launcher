@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--
+        Where the update APK lands. External-files-scoped rather than cache:
+        Android's PackageInstaller reads files served over a FileProvider more
+        cleanly from external-files-dir than from cacheDir on some OEM forks
+        (the "problema ao analisar o pacote" symptom), and the directory is
+        still app-private — nothing else in the app's storage becomes
+        reachable through the provider, just this one file.
+    -->
+    <external-files-path name="updates" path="updates/" />
+    <!-- getExternalFilesDir can legitimately be unavailable on Android 8/9.
+         AppUpdater then stages under filesDir; keep that fallback installable
+         without exposing anything outside the same narrow subdirectory. -->
+    <files-path name="updates-internal" path="updates/" />
+</paths>

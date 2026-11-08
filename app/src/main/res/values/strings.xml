@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Launcher</string>
+
+    <string name="accessibility_label">Launcher — gestures</string>
+    <string name="accessibility_summary">Draw gestures over any screen</string>
+    <string name="accessibility_description">Lets Launcher draw your gestures over the lock screen and other apps, and press back, recents, the notification shade or lock the screen when a gesture asks for it. It does not read what is on screen. Turn this off at any time to revoke it.</string>
+
+    <string name="screen_control_paused_channel">Screen control paused</string>
+    <string name="screen_control_paused_channel_desc">Shows when the gesture service steps aside for a banking app</string>
+    <string name="screen_control_paused_title">Screen control is off</string>
+    <string name="screen_control_paused_text">Gestures stepped aside for %1$s · tap to turn back on</string>
+    <string name="screen_control_paused_body">Launcher turned its gesture service off so %1$s could open. Android only lets you turn it back on by hand — tap here to go straight to the switch.</string>
+
+    <!-- ==================== Common reusable ==================== -->
+    <string name="common_save">Save</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_close">Close</string>
+    <string name="common_clear">Clear</string>
+    <string name="common_try_again">Try again</string>
+
+    <!-- ==================== Day sheet ==================== -->
+    <string name="day_sheet_title">Your day</string>
+    <string name="day_sheet_now">now</string>
+    <string name="day_sheet_today">today</string>
+    <string name="day_sheet_tomorrow">tomorrow</string>
+    <string name="day_sheet_in_days">in %1$dd</string>
+    <string name="day_sheet_new_event">New event</string>
+    <string name="day_sheet_no_events">Nothing in the calendar for the next few days.</string>
+    <string name="day_sheet_no_weather">Weather needs the location permission, granted in Settings.</string>
+    <string name="day_sheet_weather_loading">Updating weather…</string>
+    <string name="day_sheet_weather_unavailable">Weather is unavailable. Check Location and your connection.</string>
+    <string name="day_sheet_weather_retry">Try weather again</string>
+
+    <!-- ==================== Onboarding ==================== -->
+    <string name="ob_language_title">Language</string>
+    <string name="ob_language_subtitle">You can change this later in Settings.</string>
+    <string name="ob_welcome_body">A calm home screen: your clock, your day and your apps, nothing in the way.</string>
+    <string name="ob_welcome_bullet_1">No account, no login, no telemetry</string>
+    <string name="ob_welcome_bullet_2">Draw a shape to open anything</string>
+    <string name="ob_welcome_bullet_3">Widgets you arrange with one finger</string>
+    <string name="ob_home_title">Make it your home screen</string>
+    <string name="ob_home_subtitle">Android asks for your confirmation itself.</string>
+    <string name="ob_home_hint">If nothing opens, your phone may not offer the shortcut — go to Settings › Apps › Default apps › Home app.</string>
+    <string name="ob_home_done">Launcher is your home screen.</string>
+    <string name="ob_home_set_default">Set as default launcher</string>
+    <string name="ob_start">Start</string>
+    <string name="ob_continue">Continue</string>
+    <string name="ob_back">Back</string>
+    <string name="ob_step_count">A few short steps</string>
+
+    <string name="ob_perms_title">What Launcher can see</string>
+    <string name="ob_perms_subtitle">The weather, the agenda and the reminders need these. Nothing is sent anywhere.</string>
+    <string name="ob_perms_allow_all">Allow all</string>
+    <string name="ob_perms_all_granted">Everything Android asks with a dialog is allowed.</string>
+
+    <!-- ==================== Settings — general ==================== -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_count_one">one</string>
+    <string name="settings_count_many">%1$d</string>
+    <string name="settings_language_title">Language</string>
+
+    <string name="settings_category_update_title">Update</string>
+
+    <string name="settings_back_cd">Back</string>
+    <string name="drawer_system_settings_cd">Android settings</string>
+
+    <!-- Dynamic subtitles -->
+
+    <!-- On-device model -->
+
+    <!-- AI engine advanced -->
+
+    <!-- App understanding -->
+
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_subtitle">Light, dark, or whatever the phone is doing.</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_system">System</string>
+
+    <!-- Launcher default -->
+    <string name="settings_launcher_header_title">Home screen</string>
+    <string name="settings_launcher_header_subtitle">Launcher is not your home screen yet</string>
+    <string name="settings_launcher_title">Set as default launcher</string>
+    <string name="settings_launcher_subtitle">Android asks you to confirm this itself.</string>
+    <string name="settings_launcher_button">Set</string>
+
+    <!-- Weather / Notifications on home -->
+
+    <!-- Diagnostics -->
+
+    <!-- Calendar -->
+
+    <!-- Hidden apps -->
+    <string name="settings_hidden_apps_title">Hidden apps</string>
+    <string name="settings_hidden_apps_one">1 app kept out of the drawer</string>
+    <string name="settings_hidden_apps_many">%1$d apps kept out of the drawer</string>
+    <string name="settings_hidden_show">Show</string>
+    <string name="settings_hidden_show_reveal">Show in the drawer</string>
+
+    <!-- Secret field toggle -->
+    <string name="settings_secret_hide">Hide</string>
+    <string name="settings_secret_show">Show</string>
+
+    <!-- ==================== Updater ==================== -->
+    <string name="updater_checking">Checking for updates…</string>
+    <string name="updater_up_to_date">You are on the latest release.</string>
+    <string name="updater_check">Check for updates</string>
+    <string name="updater_check_with_version">Check for a new version · %1$s</string>
+    <string name="updater_check_again">Check again</string>
+    <string name="updater_verifying">Verifying %1$s…</string>
+    <string name="updater_available_title">Update to %1$s</string>
+    <string name="updater_not_now">Not now</string>
+    <string name="updater_download">Download</string>
+    <string name="updater_saved">Downloaded and verified. Tap Install — Android asks once, and later updates go straight in.</string>
+    <string name="updater_open">Install</string>
+    <string name="updater_downloading">Downloading %1$s</string>
+    <string name="updater_progress_kb">%1$d of %2$d KB</string>
+
+    <!-- ==================== Usage ==================== -->
+
+    <string name="settings_category_gestures_title">Gestures</string>
+    <string name="settings_gestures_empty">Nothing taught yet. Teach a shape below, then draw it on the home screen with two fingers.</string>
+    <string name="settings_gestures_teach">Teach a gesture</string>
+    <string name="gesture_builder_new">New gesture</string>
+    <string name="gesture_builder_draw_times">Draw it %1$d of %2$d times</string>
+    <string name="gesture_builder_what_it_does">What it does</string>
+    <string name="gesture_builder_redraw">Draw it again</string>
+    <string name="gesture_builder_name">Name</string>
+    <string name="gesture_builder_actions">It does this</string>
+    <string name="gesture_builder_remove">Remove</string>
+    <string name="gesture_builder_save">Save</string>
+    <string name="gesture_builder_cancel">Cancel</string>
+    <string name="gesture_builder_delete">Delete</string>
+    <string name="gesture_builder_disagree">That is a different shape from the last one. Draw the same one again.</string>
+    <string name="gesture_builder_collides">Too close to “%1$s”. Try a different shape.</string>
+    <string name="gesture_builder_too_short">Too short to tell apart from a tap. Draw it bigger.</string>
+    <string name="step_picker_title">Add a step</string>
+    <string name="step_uses_carried">uses what came before</string>
+    <string name="step_produces_carried">hands its result on</string>
+    <string name="step_add">Add a step</string>
+    <string name="step_open_named">Open %1$s</string>
+    <string name="step_open_app">Open it</string>
+    <string name="step_shortcuts_loading">Reading its actions…</string>
+    <string name="step_group_aura">Launcher</string>
+    <string name="step_group_phone">Phone</string>
+    <string name="gesture_show_gestures">Show my gestures</string>
+    <string name="palette_empty">Nothing taught yet.</string>
+    <string name="gesture_torch_on">Flashlight on</string>
+    <string name="gesture_torch_off">Flashlight off</string>
+    <string name="gesture_system_back">Back</string>
+    <string name="gesture_system_home">Home</string>
+    <string name="gesture_system_recents">Recent apps</string>
+    <string name="gesture_system_notifications">Notifications</string>
+    <string name="gesture_system_quick_settings">Quick settings</string>
+    <string name="gesture_system_lock">Lock the screen</string>
+
+    <!-- ==================== Live conversation ==================== -->
+
+    <!-- ==================== Model card ==================== -->
+
+    <!-- ==================== App actions sheet ==================== -->
+    <string name="app_action_unpin">Remove from home screen</string>
+    <string name="app_action_pin">Pin to home screen</string>
+    <string name="app_action_move_up">Move up</string>
+    <string name="app_action_move_down">Move down</string>
+    <string name="app_action_rename">Rename</string>
+    <string name="app_action_rename_current">Rename (currently \"%1$s\")</string>
+    <string name="app_action_show">Show in the drawer</string>
+    <string name="app_action_hide">Hide from the drawer</string>
+    <string name="app_action_info">App info</string>
+    <string name="app_action_uninstall">Uninstall</string>
+    <string name="app_rename_dialog_title">Rename %1$s</string>
+    <string name="app_rename_hint">Shown in the launcher only. The real app name stays as it is on the system.</string>
+
+    <!-- ==================== Drawer ==================== -->
+    <string name="drawer_search_placeholder">Search…</string>
+    <string name="drawer_clear_cd">Clear</string>
+    <string name="drawer_no_apps">No apps found</string>
+    <string name="drawer_no_matches">Nothing matches \"%1$s\"</string>
+
+    <!-- ==================== Home / Notifications ==================== -->
+    <string name="home_paused_fallback">a banking app</string>
+    <string name="home_open_drawer_cd">Open app drawer</string>
+    <string name="notif_count_one">1 notification</string>
+    <string name="notif_count_many">%1$d notifications</string>
+    <string name="notif_clear_all_cd">Clear all notifications</string>
+
+    <!-- ==================== Permissions ==================== -->
+    <string name="settings_category_permissions_title">Permissions</string>
+    <string name="perm_status_on">Granted</string>
+    <string name="perm_allow">Allow</string>
+    <string name="perm_notifications_title">Notifications</string>
+    <string name="perm_location_title">Location</string>
+    <string name="perm_calendar_title">Calendar</string>
+    <string name="perm_notif_access_title">Notification access</string>
+    <string name="perm_accessibility_title">Gestures over other apps</string>
+    <string name="perm_accessibility_paused">Turned off automatically for %1$s — tap to grant it again</string>
+    <string name="perm_exact_alarm_title">Exact alarms</string>
+    <string name="perm_install_title">Install unknown apps</string>
+
+    <!-- ==================== Clock menu ==================== -->
+
+    <!-- ==================== Clock styles ==================== -->
+    <string name="clock_sheet_title">Pick a clock</string>
+    <string name="clock_sheet_subtitle">Long-press the clock anytime to change it.</string>
+    <string name="clock_style_paper_name">Paper</string>
+    <string name="clock_style_paper_sub">The original — a big, light face.</string>
+    <string name="clock_style_bold_name">Poster</string>
+    <string name="clock_style_bold_sub">Hour over minute, heavy, against a rule.</string>
+    <string name="clock_style_ring_name">Ring</string>
+    <string name="clock_style_ring_sub">Two arcs filling the hour and the minute.</string>
+    <string name="clock_style_matrix_name">Matrix</string>
+    <string name="clock_style_matrix_sub">Spelled out on a grid of dots.</string>
+    <string name="clock_style_type_name">Typewriter</string>
+    <string name="clock_style_type_sub">Monospace, spaced wide, ruled top and bottom.</string>
+    <string name="clock_style_analog_name">Analog</string>
+    <string name="clock_style_analog_sub">A drawn face, no numerals.</string>
+    <string name="clock_style_minimal_name">Minimal</string>
+    <string name="clock_style_minimal_sub">Small and quiet — meant for a wallpaper behind it.</string>
+    <string name="clock_style_editorial_name">Editorial</string>
+    <string name="clock_style_editorial_sub">A book-page serif, with the colon in ink of its own.</string>
+
+    <!-- ==================== Wallpaper ==================== -->
+    <string name="settings_wallpaper_title">Wallpaper</string>
+    <string name="settings_wallpaper_subtitle">Paper, a drawn scene, or a picture of your own.</string>
+    <string name="settings_wallpaper_gallery">Gallery</string>
+    <string name="settings_wallpaper_overlay_title">Overlay</string>
+    <string name="settings_wallpaper_overlay_subtitle">Black laid over the picture, so the clock and the names read on a bright photo.</string>
+    <string name="settings_wallpaper_ink_title">Ink over wallpaper</string>
+    <string name="settings_wallpaper_ink_subtitle">Which colour the clock, dates and labels print in on top of the picture.</string>
+    <string name="settings_wallpaper_ink_follow">Follow theme</string>
+    <string name="settings_wallpaper_ink_light">Light</string>
+    <string name="settings_wallpaper_ink_dark">Dark</string>
+    <string name="settings_live_wallpaper_none">Paper</string>
+    <string name="settings_live_wallpaper_night">Night sky</string>
+    <string name="settings_live_wallpaper_constellation">Constellation</string>
+    <string name="wallpaper_editor_title">Position the picture</string>
+    <string name="wallpaper_editor_hint">Pinch to zoom, drag to move, tap the arrow to rotate.</string>
+    <string name="wallpaper_editor_rotate">Rotate</string>
+    <string name="wallpaper_editor_reset">Reset</string>
+    <string name="wallpaper_editor_apply">Apply</string>
+
+    <!-- Replying to a message straight from the home screen. -->
+    <string name="notification_reply">Reply</string>
+    <string name="notification_reply_send">Send</string>
+    <string name="notification_reply_hint">Write a reply</string>
+    <string name="notification_reply_failed">That could not be sent — the conversation may already have been answered elsewhere. Open the app to reply there.</string>
+
+    <!-- Things the drawer search finds that are not apps. -->
+
+    <!-- Home settings: an app's own shortcuts in the long-press sheet. -->
+    <string name="notification_folded">%1$d messages</string>
+
+    <string name="settings_widgets_header_subtitle">Everything the home screen can show. Turning one off only hides it — nothing recorded is lost.</string>
+    <string name="widget_clock_title">Clock</string>
+    <string name="widget_clock_subtitle">The big time at the top</string>
+    <string name="widget_date_title">Date</string>
+    <string name="widget_date_subtitle">Today, in the strip under the clock</string>
+    <string name="widget_battery_title">Battery</string>
+    <string name="widget_battery_subtitle">Charge level, beside the date</string>
+    <string name="widget_weather_title">Weather</string>
+    <string name="widget_weather_subtitle">Temperature and conditions</string>
+    <string name="widget_now_playing_title">Now playing</string>
+    <string name="widget_now_playing_subtitle">Whatever music or video is on</string>
+    <string name="widget_calendar_title">Agenda</string>
+    <string name="widget_calendar_subtitle">Your next calendar events</string>
+    <string name="widget_notifications_title">Notifications</string>
+    <string name="widget_notifications_subtitle">The list on the home screen</string>
+    <string name="widget_configure">Set up</string>
+
+    <string name="lock_gestures_title">Gestures on the lock screen</string>
+    <string name="lock_gestures_subtitle">A strip down the left edge of the lock screen. Draw out of it and the shape runs — after your fingerprint.</string>
+    <string name="lock_gestures_needs_accessibility">Needs screen control, granted above</string>
+    <string name="perm_overlay_title">Draw over other apps</string>
+
+    <!-- Timer -->
+    <string name="widget_timer_title">Timer</string>
+    <string name="widget_timer_subtitle">A stopwatch and a countdown, on the home screen</string>
+    <string name="timer_mode_stopwatch">Stopwatch</string>
+    <string name="timer_mode_countdown">Countdown</string>
+    <string name="timer_reset">Reset</string>
+    <string name="timer_minutes">%1$d min</string>
+    <string name="timer_done_title">Time is up</string>
+    <string name="timer_done_body">The countdown you set has finished.</string>
+    <string name="timer_channel_name">Timer</string>
+    <string name="timer_channel_desc">Goes off when a countdown you set reaches zero</string>
+    <string name="widget_map_title">Map</string>
+    <string name="widget_map_subtitle">Where you are, in 3D, and how far the next appointment is</string>
+    <string name="map_widget_ask">Show where I am — tap to allow precise location</string>
+    <string name="widget_now_title">Now</string>
+    <string name="widget_now_subtitle">The two or three things worth knowing this minute</string>
+    <string name="widget_sky_title">Sky</string>
+    <string name="widget_sky_subtitle">The sun\'s arc today, and the moon at night</string>
+    <string name="now_widget_label">Now</string>
+    <string name="now_late_dose">%1$s · %2$d min late</string>
+    <string name="now_leave_now">Leave now for %1$s · %2$d min drive</string>
+    <string name="now_leave_at">Leave at %1$s for %2$s · %3$d min drive</string>
+    <string name="now_event_in">%1$s in %2$d min</string>
+    <string name="now_event_at">%1$s at %2$s</string>
+    <string name="now_dose">%1$s at %2$s</string>
+    <string name="now_rain">Rain around %1$s</string>
+    <string name="sky_sunset_in">Sunset in %1$s</string>
+    <string name="sky_sunrise_at">Sunrise at %1$s</string>
+    <string name="moon_new">New moon</string>
+    <string name="moon_waxing_crescent">Waxing crescent</string>
+    <string name="moon_first_quarter">First quarter</string>
+    <string name="moon_waxing_gibbous">Waxing gibbous</string>
+    <string name="moon_full">Full moon</string>
+    <string name="moon_waning_gibbous">Waning gibbous</string>
+    <string name="moon_last_quarter">Last quarter</string>
+    <string name="moon_waning_crescent">Waning crescent</string>
+    <string name="now_ongoing">%1$s · until %2$s</string>
+    <string name="now_alarm">Alarm at %1$s</string>
+    <string name="now_timer_left">Timer · %1$s left</string>
+    <string name="now_stopwatch">Stopwatch · %1$s</string>
+    <string name="map_where_to">Where to?</string>
+    <string name="map_mode_car">Car</string>
+    <string name="map_mode_transit">Transit</string>
+    <string name="map_mode_walk">Walk</string>
+    <string name="map_mode_bike">Bike</string>
+    <string name="map_finding_route">Finding the way…</string>
+    <string name="map_no_route">No route found for this one</string>
+    <string name="map_open_maps">Open in Maps</string>
+    <string name="map_open_uber">Uber</string>
+
+    <string name="widget_todo_title">To-do</string>
+    <string name="widget_todo_subtitle">What is due today, one tap to tick it off. Repeats and reminders.</string>
+    <string name="todo_notif_done">Done</string>
+    <string name="todo_channel_name">To-do reminders</string>
+    <string name="todo_channel_description">A to-do whose time has come.</string>
+    <string name="todo_tomorrow">tomorrow</string>
+    <string name="todo_yesterday">yesterday</string>
+    <string name="todo_today">Today</string>
+    <string name="todo_title">To-do</string>
+    <string name="todo_new">New to-do</string>
+    <string name="todo_edit">Edit</string>
+    <string name="todo_none">Nothing yet. Add one here.</string>
+    <string name="todo_paused">Paused</string>
+    <string name="todo_all_done">Done</string>
+    <string name="todo_every_hours">Every %d h</string>
+    <string name="todo_daily">Daily</string>
+    <string name="todo_every_days">Every %d days</string>
+    <string name="todo_weekly">Weekly</string>
+    <string name="todo_every_weeks">Every %d weeks</string>
+    <string name="todo_monthly">Monthly</string>
+    <string name="todo_every_months">Every %d months</string>
+    <string name="todo_field_title">What to do</string>
+    <string name="todo_field_note">Detail (optional)</string>
+    <string name="todo_field_when">When</string>
+    <string name="todo_pick_date">Other day</string>
+    <string name="todo_no_time">Any time</string>
+    <string name="todo_pick_time">At a time</string>
+    <string name="todo_field_repeat">Repeat</string>
+    <string name="todo_repeat_none">Once</string>
+    <string name="todo_repeat_hours">Every few hours</string>
+    <string name="todo_every">Every</string>
+    <string name="todo_unit_hours">hours</string>
+    <string name="todo_unit_days">days</string>
+    <string name="todo_unit_weeks">weeks</string>
+    <string name="todo_unit_months">months</string>
+    <string name="todo_forever">No end</string>
+    <string name="todo_until">Until %s</string>
+    <string name="todo_pick_end">Until…</string>
+    <string name="todo_remind">Remind me at the time</string>
+    <string name="todo_pause">Paused</string>
+    <string name="todo_save">Save</string>
+    <string name="todo_delete">Delete</string>
+    <string name="ob_perms_notif_access">Read notifications (optional)</string>
+    <string name="ob_perms_updates">Install Launcher\'s updates</string>
+    <string name="ob_perms_allow">Allow</string>
+    <string name="ob_perms_note">Each one opens Android\'s page on Launcher\'s switch: turn it on and come back.</string>
+    <string name="perm_self_enable_title">Turn back on by itself after banks</string>
+    <string name="perm_self_enable_note">Optional, from a computer, once. Tap to copy the command and run it with the phone connected (USB debugging on).</string>
+    <string name="perm_self_enable_copied">Command copied. Run it on the computer with the phone connected.</string>
+    <string name="updater_installing">Installing… Launcher restarts by itself.</string>
+    <string name="updater_install_failed">Could not install: %1$s</string>
+    <string name="updater_channel_name">Updates</string>
+    <string name="updater_ready_title">Launcher %1$s ready</string>
+    <string name="updater_ready_text">Downloaded and verified. Tap to install.</string>
+    <string name="updater_install_now">Install</string>
+    <string name="world_tela">Your screen</string>
+    <string name="world_tela_hint">Theme, clock, home and widgets</string>
+    <string name="world_acoes">Gestures</string>
+    <string name="world_acoes_hint">Shapes you draw to open things</string>
+    <string name="world_dados">System</string>
+    <string name="world_dados_hint">Permissions, language, hidden apps, version</string>
+    <string name="suggest_header">Still missing</string>
+    <string name="suggest_none">All set here.</string>
+    <string name="suggest_allow">Allow</string>
+    <string name="suggest_alarm_title">Reminders right on time</string>
+    <string name="suggest_alarm_why">Without this they can arrive late.</string>
+    <string name="suggest_turn_on">Turn on</string>
+    <string name="suggest_notif_title">Notifications</string>
+    <string name="suggest_notif_why">For timers and to-do reminders.</string>
+    <string name="day_now">Now</string>
+    <string name="day_tomorrow">Tomorrow</string>
+    <string name="day_reminder">Reminder</string>
+    <string name="day_late">Late</string>
+    <string name="day_rain_at">Rain around %1$s.</string>
+    <string name="day_in_minutes">in %1$d min</string>
+    <string name="sky_clear">clear</string>
+    <string name="sky_partly">some clouds</string>
+    <string name="sky_cloudy">cloudy</string>
+    <string name="sky_fog">fog</string>
+    <string name="sky_rain">rain</string>
+    <string name="sky_snow">snow</string>
+    <string name="sky_storm">storm</string>
+    <string name="tela_home_style">Home</string>
+    <string name="tela_home_day">Day in a line</string>
+    <string name="tela_home_day_hint">Small clock and your day on one line.</string>
+    <string name="tela_home_classic">Classic</string>
+    <string name="tela_home_classic_hint">The big clock and your favourites.</string>
+    <string name="tela_day_favorites">Favourites under the day</string>
+    <string name="tela_day_favorites_hint">The apps you pinned, below the day\'s line.</string>
+
+    <string name="tela_live_weather">Live weather</string>
+    <string name="tela_live_weather_hint">The home\'s sky follows the weather outside: rain, storms, snow, fog, sun, night. Paused on battery saver.</string>
+
+    <string name="settings_category_drawings_title">Drawings</string>
+    <string name="settings_drawings_new">New drawing</string>
+    <string name="settings_drawings_empty">Where you draw gestures, hold a finger still and a board opens: an endless page to draw on by hand. Circle something and the AI works its magic on it. Your drawings are kept here.</string>
+    <string name="settings_drawings_model">Model that helps</string>
+    <string name="settings_drawings_provider">Provider</string>
+    <string name="settings_drawings_key">API key</string>
+    <string name="settings_drawings_model_name">Model</string>
+    <string name="settings_drawings_base_url">Address</string>
+    <string name="settings_drawings_model_hint">It needs a model that sees images. The key stays on this phone.</string>
+    <string name="settings_drawings_delete">Delete this drawing?</string>
+    <string name="settings_drawings_delete_confirm">Delete</string>
+    <string name="sketch_no_model">Free drawing — pick a model in Settings › Drawings for the AI to help</string>
+    <string name="sketch_model_failed">The model did not answer: %1$s</string>
+    <string name="sketch_no_picture">No picture found for “%1$s”</string>
+    <string name="settings_drawings_load_models">Load models</string>
+    <string name="settings_drawings_loading">Loading…</string>
+    <string name="settings_drawings_test">Test</string>
+    <string name="settings_drawings_testing">Testing…</string>
+    <string name="settings_drawings_test_ok">It answered in %1$s s and saw: %2$s</string>
+    <string name="settings_drawings_no_models">This address listed no models</string>
+    <string name="settings_drawings_pick_model">Model</string>
+    <string name="settings_drawings_filter">Filter</string>
+</resources>

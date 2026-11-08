@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="sharedpref" path="." />
+        <include domain="file" path="gestures.json" />
+        <include domain="file" path="todo.json" />
+        <include domain="file" path="care.json" />
+        <include domain="file" path="wallpaper" />
+        <!-- The DataStore and mcp_servers.json contain credentials and are not
+             in this whitelist. Models and derived logs/profiles are omitted too. -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- Phone-to-phone transfer stays under the user's physical control,
+             so the keys travel with the rest of Settings when swapping a
+             device. Only cloud backup gets the exclude above. -->
+        <include domain="sharedpref" path="." />
+        <include domain="file" path="." />
+        <exclude domain="file" path="models" />
+        <exclude domain="file" path="whisper" />
+    </device-transfer>
+</data-extraction-rules>

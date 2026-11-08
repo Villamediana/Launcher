@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="sharedpref" path="." />
+    <!-- Durable user-created data. Explicit includes keep derived profiles,
+         usage trails, crash logs, downloaded models and MCP credentials out. -->
+    <include domain="file" path="gestures.json" />
+    <include domain="file" path="todo.json" />
+    <include domain="file" path="care.json" />
+    <include domain="file" path="wallpaper" />
+    <!-- aura_settings.preferences_pb is deliberately absent: it contains API
+         keys. Any include makes this a whitelist, so no redundant excludes are
+         needed (and Android lint treats excludes outside it as fatal). -->
+</full-backup-content>
